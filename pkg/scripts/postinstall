@@ -1,0 +1,13 @@
+#!/bin/bash
+# start the daemon now and the menu bar app for the logged-in user
+chmod 755 /usr/local/libexec/rtw89/rtw89d /usr/local/libexec/rtw89/uninstall.sh
+chown root:wheel /Library/LaunchDaemons/local.rtw89d.plist /Library/LaunchAgents/local.rtw89.wifi.plist
+chmod 644 /Library/LaunchDaemons/local.rtw89d.plist /Library/LaunchAgents/local.rtw89.wifi.plist
+mkdir -p /var/db/rtw89d
+launchctl bootstrap system /Library/LaunchDaemons/local.rtw89d.plist 2>/dev/null || launchctl kickstart -k system/local.rtw89d
+U=$(stat -f %Su /dev/console 2>/dev/null)
+if [ -n "$U" ] && [ "$U" != root ]; then
+  UIDN=$(id -u "$U")
+  launchctl bootstrap "gui/$UIDN" /Library/LaunchAgents/local.rtw89.wifi.plist 2>/dev/null || true
+fi
+exit 0

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="2">
+  <title>RTW89 Wi-Fi</title>
+  <welcome file="welcome.html"/>
+  <license file="License.txt"/>
+  <conclusion file="conclusion.html"/>
+  <options customize="never" require-scripts="false" hostArchitectures="x86_64,arm64"/>
+  <domains enable_anywhere="false" enable_localSystem="true"/>
+  <choices-outline><line choice="default"/></choices-outline>
+  <choice id="default" title="RTW89 Wi-Fi"><pkg-ref id="local.rtw89.wifi"/></choice>
+  <pkg-ref id="local.rtw89.wifi" version="VERSION">rtw89.pkg</pkg-ref>
+</installer-gui-script>

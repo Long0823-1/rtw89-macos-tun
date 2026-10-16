@@ -1,0 +1,14 @@
+rtw89/*.bin
+rtw89/list.json
+port/build/
+port/rtw89d
+build/
+dist/
+app/RTW89WiFi.app/Contents/MacOS/
+app/RTW89WiFi.app/Contents/_CodeSignature/
+*.o
+*.d
+.DS_Store
+*.psk
+.rtw89_psk
+*.log

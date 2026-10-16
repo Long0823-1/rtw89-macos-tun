@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>local.rtw89d</string>
+  <key>ProgramArguments</key><array><string>/usr/local/libexec/rtw89/rtw89d</string><string>daemon</string></array>
+  <key>EnvironmentVariables</key><dict><key>RTW89_FW_DIR</key><string>/usr/local/share/rtw89</string></dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>ThrottleInterval</key><integer>5</integer>
+  <key>StandardErrorPath</key><string>/var/log/rtw89d.log</string>
+  <key>StandardOutPath</key><string>/var/log/rtw89d.log</string>
+</dict></plist>
