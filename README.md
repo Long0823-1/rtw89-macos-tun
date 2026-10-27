@@ -47,3 +47,9 @@ scripts/build-pkg.sh 0.1.0     # ファームウェア取得 → rtw89d と ア�
 ## ライセンス
 `rtw89` と Linux のヘッダーは GPL-2.0(rtw89 は GPL-2.0 OR BSD-3-Clause)。リンクした成果物は **GPL-2.0** です(`COPYING`、`THIRD_PARTY.md`)。
 ファームウェアは Realtek のもので、リポジトリには含めず、`scripts/fetch-firmware.sh` で取得して PKG に同梱します。
+
+## Support / 開発支援
+
+開発・保守活動をKo-fiで支援できます。
+
+[Ko-fiで支援する](https://ko-fi.com/long0823)
